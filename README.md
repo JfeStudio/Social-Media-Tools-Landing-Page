@@ -1,4 +1,4 @@
-# Slicing Design from figma 
+# Slicing Design From Figma 
 
 # Social Media Tools Landing-Page
 
