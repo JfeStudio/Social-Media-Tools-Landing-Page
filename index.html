@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- logo -->
+    <link rel="icon" href="./public/images/logo-code-curly.svg" />
+
+    <!-- native css -->
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <title>Social Media Tools</title>
+  </head>
+  <body class="bg-orange-50 font-montserrat">
+    <!-- header -->
+    <header
+      id="header"
+      class="fixed z-[999] w-full bg-transparent py-3 transition-all md:static md:bg-dark-violet md:py-3 lg:py-6"
+    >
+      <div class="container mx-auto">
+        <div
+          class="navbar relative flex items-center justify-between md:items-center md:gap-x-12"
+        >
+          <div class="logo cursor-pointer">
+            <i class="icon-logo bx bx-code-curly text-3xl text-holy-blur"></i>
+          </div>
+          <nav
+            id="navigation"
+            class="navigation pointer-events-none absolute top-10 right-1 w-56 rounded-md bg-holy-blur p-7 opacity-0 shadow-xl transition-all duration-300 ease-in-out md:pointer-events-auto md:static md:flex md:w-full md:items-center md:bg-transparent md:p-0 md:opacity-100 md:shadow-none lg:justify-end lg:gap-x-44"
+            data-visible="false"
+          >
+            <ul
+              class="menu flex flex-col gap-y-4 md:flex-row md:items-center md:gap-x-8 lg:gap-x-10"
+            >
+              <li class="text-center">
+                <a
+                  class="nav-link text-[.8rem] font-semibold text-dark-scy md:text-[.7rem] md:text-holy-blur lg:text-sm"
+                  href="#"
+                  >Top</a
+                >
+              </li>
+              <li class="text-center">
+                <a
+                  class="nav-link text-[.8rem] font-semibold text-gray-400 hover:text-holy-blur md:text-[.7rem] lg:text-sm"
+                  href="#"
+                  >Features</a
+                >
+              </li>
+              <li class="text-center">
+                <a
+                  class="nav-link text-[.8rem] font-semibold text-gray-400 hover:text-holy-blur md:text-[.7rem] lg:text-sm"
+                  href="#"
+                  >Reasons</a
+                >
+              </li>
+              <li class="text-center">
+                <a
+                  class="nav-link text-[.8rem] font-semibold text-gray-400 hover:text-holy-blur md:text-[.7rem] lg:text-sm"
+                  href="#"
+                  >Alternatives</a
+                >
+              </li>
+            </ul>
+            <div
+              class="btn-navigation mt-3 border-t md:ml-auto md:mt-0 md:flex md:border-none lg:m-0 lg:gap-x-3"
+            >
+              <button
+                type="submit"
+                class="btn-signup text-hover mt-4 block w-full bg-transparent px-7 text-[.8rem] font-semibold text-dark-scy md:mt-0 md:w-[inherit] md:px-5 md:text-[.7rem] md:text-white lg:text-sm"
+              >
+                <span class="hover:underline">Mendaftar</span>
+              </button>
+              <button
+                type="submit"
+                class="btn-signup bg-cyan bg-hover mt-3 block w-full rounded-full bg-dark-scy px-7 py-[10px] text-[.8rem] font-semibold text-holy-blur shadow-3xl md:mt-0 md:w-[inherit] md:bg-white md:py-2 md:px-5 md:text-[.7rem] md:text-dark-scy lg:px-6 lg:text-sm"
+              >
+                Login
+              </button>
+            </div>
+          </nav>
+          <div
+            class="menu-hamburger cursor-pointer md:hidden"
+            aria-expanded="false"
+            aria-controls="navigation"
+          >
+            <i
+              class="icon-hamburger bx bx-menu-alt-right icon text-3xl text-holy-blur"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- content -->
+    <section
+      class="content bg-dark-violet pt-24 pb-20 md:-translate-y-1 md:py-16 lg:relative lg:pb-64"
+    >
+      <div class="container mx-auto">
+        <div class="rows-content lg:flex lg:flex-col">
+          <div
+            class="cols-content lg:absolute lg:right-1/2 lg:-bottom-72 lg:order-last lg:translate-x-1/2"
+          >
+            <img class="lg:z-50" src="./public/images/hero-image.png" alt="" />
+          </div>
+          <div class="cols-content text-center text-holy-blur lg:relative">
+            <!-- absolute images -->
+            <!-- left -->
+            <img
+              class="absolute top-14 left-32 hidden w-[4.5rem] lg:block"
+              src="./public/images/icon-youtube.png"
+              alt=""
+            />
+            <img
+              class="absolute top-44 left-28 hidden w-12 lg:block"
+              src="./public/images/icon-circle-blur-left.png"
+              alt=""
+            />
+            <img
+              class="absolute top-[17.5rem] left-36 hidden w-11 lg:block"
+              src="./public/images/icon-instagram.png"
+              alt=""
+            />
+            <!-- right -->
+            <img
+              class="absolute top-2 right-32 hidden lg:block"
+              src="./public/images/icon-circle-blur-right.png"
+              alt=""
+            />
+            <img
+              class="absolute top-32 right-32 hidden w-11 lg:block"
+              src="./public/images/icon-facebook.png"
+              alt=""
+            />
+            <img
+              class="absolute top-64 right-40 hidden w-10 lg:block"
+              src="./public/images/icon-tiktok.png"
+              alt=""
+            />
+            <!-- end -->
+            <span
+              class="dope text-sm font-bold uppercase text-orange-body lg:font-medium"
+            >
+              Mana saya tau saya kan pencurry
+            </span>
+            <h1
+              class="title my-4 font-roboto text-3xl text-holy-blur lg:mx-auto lg:w-3/5 lg:text-5xl lg:leading-snug"
+            >
+              Social Media Tool Yang Tidak Akan Memberikan Kamu Insight Apapun
+            </h1>
+            <p class="text-base text-slate-300 lg:mx-auto lg:my-7 lg:w-1/2">
+              Adalah benar apa yang kamu baca barusan. Tool yang mainstream akan
+              memberikan kamu berbagai insight, karena kami anti-mainstream maka
+              kami akan melakukan sebaliknya.
+            </p>
+            <div
+              class="btn-content mt-9 flex flex-wrap justify-around gap-y-7 md:justify-center md:gap-x-8 lg:mt-12"
+            >
+              <button
+                class="rounded-full bg-orange-body py-3 px-7 shadow-3xl hover:opacity-95"
+                type="submit"
+              >
+                Memulai Sekarang
+              </button>
+              <button class="flex items-center gap-x-2 px-3" type="submit">
+                <i class="icon bx bx-play-circle text-2xl"></i
+                ><span>Pelajarin Dulu</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- wave -->
+    <img
+      class="-translate-y-2 lg:relative lg:-z-[999]"
+      src="./public/images/wave-stunami-code-7.svg"
+      alt=""
+    />
+
+    <!-- nothing insight -->
+    <section class="nothing-insight bg-orange-50 py-8 lg:pt-28">
+      <div class="container mx-auto">
+        <div
+          class="rows-nothing-insight flex flex-wrap gap-y-14 lg:flex-nowrap lg:items-center lg:justify-between lg:gap-x-10"
+        >
+          <div
+            class="cols-nothing-insight flex flex-wrap lg:order-last lg:basis-[41%]"
+          >
+            <div
+              class="box-nothing-insight basis-1/2 border-r border-slate-200 p-3 text-dark-scy"
+            >
+              <div class="box">
+                <div class="info-box flex items-center gap-x-3">
+                  <i
+                    class="icon bx bx-data rounded-md bg-orange-100 p-1 text-2xl text-orange-button"
+                  ></i>
+                  <h4 class="font-roboto text-base font-bold">Database</h4>
+                </div>
+                <p class="mt-4 text-sm text-gray-600">
+                  Data insight yang banyak kan bakal disimpen di database, ya
+                  kalo datanya banyak kan jadi gede juga size database-nya.
+                </p>
+              </div>
+            </div>
+
+            <div class="box-nothing-insight basis-1/2 p-3 text-dark-scy">
+              <div class="box">
+                <div class="info-box flex items-center gap-x-3">
+                  <i
+                    class="icon bx bx-server rounded-md bg-orange-100 p-1 text-2xl text-orange-button"
+                  ></i>
+                  <h4 class="font-roboto text-base font-bold">Server</h4>
+                </div>
+                <p class="mt-4 text-sm text-gray-600">
+                  Kalo ada insight, kamu akan bulak balik ngecek kan? Otomatis
+                  server harus idup terus, itu butuh listrik!
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="box-nothing-insight basis-1/2 border-r border-t border-slate-200 p-3 text-dark-scy"
+            >
+              <div class="box">
+                <div class="info-box flex items-center gap-x-3">
+                  <i
+                    class="icon bx bxs-zap rounded-md bg-orange-100 p-1 text-2xl text-orange-button"
+                  ></i>
+                  <h4 class="font-roboto text-base font-bold">listrik</h4>
+                </div>
+                <p class="mt-4 text-sm text-gray-600">
+                  Biaya listrik mahal, bos! Listrik kita ini masih batu bara,
+                  nggak bagus buat lingkungan. Kalo pake nuklir sih oke-oke aja
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="box-nothing-insight basis-1/2 border-t border-slate-200 p-3 text-dark-scy"
+            >
+              <div class="box">
+                <div class="info-box flex items-center gap-x-3">
+                  <i
+                    class="icon bx bx-globe rounded-md bg-orange-100 p-1 text-2xl text-orange-button"
+                  ></i>
+                  <h4 class="font-roboto text-base font-bold">Lingkungan</h4>
+                </div>
+                <p class="mt-4 text-sm text-gray-600">
+                  Pokoknya nggak bagus lah buat lingkungan, ini alesan kita
+                  kepana gak kasih insight. Demi menyelamatkan bumi!
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- ==== -->
+          <div
+            class="cols-nothing-insight text-center lg:basis-[46%] lg:text-start"
+          >
+            <h5
+              class="relative text-base font-bold uppercase text-orange-body lg:pl-10 lg:text-sm lg:font-medium lg:before:absolute lg:before:top-1/2 lg:before:left-0 lg:before:h-[.1rem] lg:before:w-8 lg:before:-translate-y-1/2 lg:before:bg-orange-body lg:before:content-['']"
+            >
+              Kenapa sih?
+            </h5>
+            <h1
+              class="title my-5 text-2xl font-bold text-dark-scy lg:text-4xl lg:leading-snug"
+            >
+              Kenapa Kami Tidak Memberikan Insight Apapun?
+            </h1>
+            <p class="text-base text-gray-600">
+              Di sini kita akan klarifikasi mengapa kita tidak memberikan
+              insight apapun di tool ini kepada kamu. Pada dasarnya hal ini kami
+              lakukan semata-mata ingin menyelamatkan planet bumi.
+            </p>
+            <button
+              class="mx-auto mt-6 flex items-center gap-x-4 rounded-full bg-dark-scy px-8 py-4 text-holy-blur hover:opacity-90 lg:m-0 lg:mt-6 lg:gap-x-2 lg:px-6 lg:py-[.7rem]"
+              type="submit"
+            >
+              <span class="font-bold text-holy-blur lg:text-sm"
+                >Pelajari Lebih Lanjut</span
+              >
+              <i
+                class="icon bx bx-right-arrow-alt rounded-full border-2 border-holy-blur p-1 lg:scale-75"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- insight autid -->
+    <section class="insight-autid bg-orange-50 pt-28 pb-20 lg:pt-36 lg:pb-36">
+      <div class="container mx-auto">
+        <div class="rows-insight-autid flex flex-wrap gap-y-16 lg:flex-col">
+          <div class="cols-insight-autid text-center">
+            <h5
+              class="text-base font-bold uppercase text-orange-body lg:text-sm lg:font-medium"
+            >
+              Terus gimana?
+            </h5>
+            <h1
+              class="title my-5 text-2xl font-bold text-dark-scy lg:mx-auto lg:w-[60%] lg:text-4xl lg:leading-snug"
+            >
+              Terus Ngapain Dong Kalo Nggak Ada Insight Apapun?
+            </h1>
+            <p class="text-base text-gray-600 lg:mx-auto lg:mt-7 lg:w-[53%]">
+              Ya nggak tau, salah sendiri lu ngapain ke website ini. Tapi ada
+              tiga kemungkinan kanapa lo bisa ada di website ini. Ketiga
+              kemungkinan itu akan gwej jabarkan di bawah ini dengan
+              ilustrasinya hehehe.
+            </p>
+          </div>
+          <div
+            class="cols-insight-autid flex flex-wrap gap-y-14 lg:flex-row lg:flex-nowrap lg:gap-x-8"
+          >
+            <div
+              class="card-insight-autid rounded-md text-center lg:text-start"
+            >
+              <div
+                class="card-images flex h-40 w-full items-center justify-center rounded-md bg-[#ddd]"
+              >
+                <img
+                  class="w-20 lg:w-16"
+                  src="./public/images/image-love.png"
+                  alt=""
+                />
+              </div>
+              <h3
+                class="card-title my-2 text-lg font-bold text-dark-scy lg:text-base"
+              >
+                Kamu Tidak Punya Kekasih
+              </h3>
+              <p class="text-[.95rem] text-gray-600 lg:text-sm">
+                Sudah pasti orang yang tidak punya kekasih akan memiliki waktu
+                luang yang banyak, jadi ya lo iseng aja gitu datang ke website
+                ini.
+              </p>
+            </div>
+            <div class="card-insight-autid text-center lg:text-start">
+              <div
+                class="card-images flex h-40 w-full items-center justify-center rounded-md bg-[#ddd]"
+              >
+                <img
+                  class="w-20 lg:w-16"
+                  src="./public/images/image-emotion.png"
+                  alt=""
+                />
+              </div>
+              <h3
+                class="card-title my-2 text-lg font-bold text-dark-scy lg:text-base"
+              >
+                Lo Wibu Autid
+              </h3>
+              <p class="text-[.95rem] text-gray-600 lg:text-sm">
+                Iyh bener, biasanya wibu kalo nggak halu waifu suka iseng nggak
+                jelas, termasuk mengunjungi website ini tanpa alasan yang jelas
+                hehehe.
+              </p>
+            </div>
+            <div class="card-insight-autid text-center lg:text-start">
+              <div
+                class="card-images flex h-40 w-full items-center justify-center rounded-md bg-[#ddd]"
+              >
+                <img
+                  class="w-20 lg:w-16"
+                  src="./public/images/image-ayam.png"
+                  alt=""
+                />
+              </div>
+              <h3
+                class="card-title my-2 text-lg font-bold text-dark-scy lg:text-base"
+              >
+                Kok Gambar Ayam?
+              </h3>
+              <p class="text-[.95rem] text-gray-600 lg:text-sm">
+                Lah ngatur, Nggak tau lagi gwej alasan yang ketiga, biar bagus
+                aja desainnya, Kalo cuman dua jadinya nggak bagus hehe.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- wave -->
+    <img
+      class="translate-y-1"
+      src="./public/images/wave-stunami-code-12.svg"
+      alt=""
+    />
+    <!-- alternatives -->
+    <section class="alternatives h-[65rem] bg-dark-violet py-20 md:h-[35rem]">
+      <div class="container mx-auto">
+        <div
+          class="rows-alternative relative flex flex-wrap gap-y-16 lg:gap-y-10"
+        >
+          <div
+            class="cols-alternative text-center text-slate-300 lg:flex lg:flex-nowrap lg:items-center lg:justify-between lg:gap-x-3 lg:text-start"
+          >
+            <div class="info-alternative lg:basis-[55%]">
+              <h5
+                class="relative text-base font-bold uppercase lg:pl-10 lg:text-sm lg:font-medium lg:before:absolute lg:before:top-1/2 lg:before:left-0 lg:before:h-[.1rem] lg:before:w-8 lg:before:-translate-y-1/2 lg:before:bg-holy-blur lg:before:content-['']"
+              >
+                Alternatives
+              </h5>
+              <h1
+                class="title my-5 text-2xl font-bold text-holy-blur lg:text-4xl lg:leading-snug"
+              >
+                Karena Tool Kita Ini Nggak Ada Apa-Apanya, inilah Alternatifnya!
+              </h1>
+            </div>
+            <p class="text-base text-gray-300 lg:basis-[45%]">
+              Seperti yang lo tau sendiri ya, tool ini tuh nggak ada apa-apanya,
+              Barangkali lo udah serius gitu butuh tool untuk sosial media, maka
+              dari itu kita kasih 2 alternatif yang bisa lo pake untuk sosial
+              media lo.
+            </p>
+          </div>
+          <div
+            class="cols-alternative flex flex-wrap gap-y-10 rounded-lg bg-white px-3 pt-3 pb-5 shadow-3xl md:flex-nowrap md:gap-x-6 lg:justify-center lg:rounded-2xl lg:pt-12 lg:pb-10"
+          >
+            <div class="card md:basis-1/2 lg:basis-[45%]">
+              <div class="card-images">
+                <img src="./public/images/hero-section-left.png" alt="" />
+              </div>
+              <div class="card-body">
+                <p class="my-5 text-base">
+                  Buffer.com - Buffer is the most intuitive, affordable, and
+                  authentic way to reach more people on social media.
+                </p>
+                <a class="flex items-center gap-x-1" href="#">
+                  <span class="text-base font-bold lg:text-sm">Learn More</span>
+                  <i class="icon bx bx-right-arrow-alt text-2xl lg:text-lg"></i>
+                </a>
+              </div>
+            </div>
+            <div class="card md:basis-1/2 lg:basis-[45%]">
+              <div class="card-images">
+                <img src="./public/images/hero-section-right.png" alt="" />
+              </div>
+              <div class="card-body">
+                <p class="my-5 text-base">
+                  Sendible.com - Grow your audience, attract new customers, and
+                  reach your social media goals with an all-in-one platform.
+                </p>
+                <a class="flex items-center gap-x-1" href="#">
+                  <span class="text-base font-bold lg:text-sm">Learn More</span>
+                  <i class="icon bx bx-right-arrow-alt text-2xl lg:text-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-white pt-60 pb-10 lg:pt-[22rem]">
+      <div class="container mx-auto">
+        <div class="rows-footer flex flex-wrap gap-y-11">
+          <div class="cols-footer basis-1/2 lg:basis-1/4">
+            <h4 class="text-base font-bold uppercase text-dark-scy lg:text-sm">
+              Alternatives
+            </h4>
+            <ul class="flex flex-col">
+              <li
+                class="mt-3 max-w-max cursor-pointer text-base text-dark-scy hover:underline lg:mt-5 lg:text-[.90rem]"
+              >
+                Buffer
+              </li>
+              <li
+                class="mt-3 max-w-max cursor-pointer text-base text-dark-scy hover:underline lg:text-[.90rem]"
+              >
+                Sendible
+              </li>
+              <li
+                class="mt-3 max-w-max cursor-pointer text-base text-dark-scy hover:underline lg:text-[.90rem]"
+              >
+                Later
+              </li>
+              <li
+                class="mt-3 max-w-max cursor-pointer text-base text-dark-scy hover:underline lg:text-[.90rem]"
+              >
+                Social Pilot
+              </li>
+            </ul>
+          </div>
+          <div class="cols-footer basis-1/2 lg:basis-1/4">
+            <h4 class="text-base font-bold uppercase text-dark-scy lg:text-sm">
+              Sitemap
+            </h4>
+            <ul>
+              <li
+                class="mt-3 max-w-max cursor-pointer text-base text-dark-scy hover:underline lg:mt-5 lg:text-[.90rem]"
+              >
+                Top
+              </li>
+              <li
+                class="mt-3 max-w-max cursor-pointer text-base text-dark-scy hover:underline lg:text-[.90rem]"
+              >
+                Features
+              </li>
+              <li
+                class="mt-3 max-w-max cursor-pointer text-base text-dark-scy hover:underline lg:text-[.90rem]"
+              >
+                Reasons
+              </li>
+              <li
+                class="mt-3 max-w-max cursor-pointer text-base text-dark-scy hover:underline lg:text-[.90rem]"
+              >
+                Alternatives
+              </li>
+              <li
+                class="mt-3 max-w-max cursor-pointer text-base text-dark-scy hover:underline lg:text-[.90rem]"
+              >
+                Login
+              </li>
+            </ul>
+          </div>
+          <div class="cols-footer basis-1/2 lg:basis-1/4">
+            <h4 class="text-base font-bold uppercase text-dark-scy lg:text-sm">
+              Company
+            </h4>
+            <ul>
+              <li
+                class="mt-3 max-w-max cursor-pointer text-base text-dark-scy hover:underline lg:mt-5 lg:text-[.90rem]"
+              >
+                About Us
+              </li>
+              <li
+                class="mt-3 max-w-max cursor-pointer text-base text-dark-scy hover:underline lg:text-[.90rem]"
+              >
+                Contact
+              </li>
+              <li
+                class="mt-3 max-w-max cursor-pointer text-base text-dark-scy hover:underline lg:text-[.90rem]"
+              >
+                Privacy Policy
+              </li>
+              <li
+                class="mt-3 max-w-max cursor-pointer text-base text-dark-scy hover:underline lg:text-[.90rem]"
+              >
+                Terms of Service
+              </li>
+              <li
+                class="mt-3 max-w-max cursor-pointer text-base text-dark-scy hover:underline lg:text-[.90rem]"
+              >
+                Help
+              </li>
+            </ul>
+          </div>
+          <div class="cols-footer basis-1/2 lg:basis-1/4">
+            <h4 class="text-base font-bold uppercase text-dark-scy lg:text-sm">
+              Get in touch
+            </h4>
+            <ul>
+              <li
+                class="mt-3 max-w-max cursor-pointer text-base text-dark-scy hover:underline lg:mt-5 lg:text-[.90rem]"
+              >
+                Twitter
+              </li>
+              <li
+                class="mt-3 max-w-max cursor-pointer text-base text-dark-scy hover:underline lg:text-[.90rem]"
+              >
+                Facebook
+              </li>
+              <li
+                class="mt-3 max-w-max cursor-pointer text-base text-dark-scy hover:underline lg:text-[.90rem]"
+              >
+                Dribbble
+              </li>
+            </ul>
+          </div>
+        </div>
+        <span
+          class="copyrights mt-10 block border-t pt-10 text-center font-serif text-xs text-slate-400"
+        >
+          © 2022 CREATED BY
+          <a target="_blank" href="https://github.com/JfeStudio">MAMAN</a> ALL
+          RIGHTS RESERVED.
+        </span>
+      </div>
+    </footer>
+    <!-- vanilla js -->
+    <script src="./public/js/main.js"></script>
+  </body>
+</html>

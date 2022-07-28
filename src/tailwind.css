@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* format font :
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap");
+
+/* debug */
+.borders {
+  @apply border border-dark-scy;
+}
+
+.borders-debug {
+  @apply border border-holy-blur;
+}
+
+.borders-red {
+  @apply border border-red-700;
+}
+
+/* navscrolling */
+.header-fixed {
+  @apply bg-transparent py-2;
+  backdrop-filter: blur(0.3rem);
+  -webkit-backdrop-filter: blur(0.3rem);
+  box-shadow: 0 1px 10px rgba(0 0 0 / 0.1);
+}
+
+.icon-changes {
+  @apply text-dark-scy;
+}
+
+#navigation[data-visible="true"] {
+  @apply top-14 opacity-100;
+  pointer-events: visible;
+}
+
+/* custom scrolbar */
+::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px rgba(0 0 0 / 0.15);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(125deg, #111, #333);
+  border-radius: 10px;
+}
+
+.box-nothing-insight:hover {
+  @apply rounded-lg bg-black text-holy-blur shadow-3xl;
+}
+
+.box-nothing-insight:hover .icon {
+  @apply bg-glass-holy-blur text-holy-blur;
+}
+
+.box-nothing-insight:hover .box p {
+  @apply text-holy-blur;
+}
